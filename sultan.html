@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فروع بيت الجملة</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 20px;
+          text-align: center;
+      }
+      .button {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 12px;
+      }
+      .branch-list {
+          display: none;
+          margin-top: 20px;
+          padding: 10px;
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .branch-item {
+          margin: 10px 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .header {
+          font-size: 24px;
+          font-weight: bold;
+          margin: 20px 0;
+          color: #333;
+      }
+  </style>
+</head>
+<body>
+  <h1>مرحبا بكم في بيت الجملة!</h1>
+  <button class="button" onclick="toggleBranches()">فروع بيت الجملة</button>
+  <div class="branch-list" id="branchList">
+      <div class="header">فروع القاهرة</div>
+      <div class="branch-item">
+          <strong>فرع مدينتي:</strong> مدينتي B12
+          <button class="button" onclick="window.open('https://maps.app.goo.gl/wXsBJHdAZ8VBMwAx7', '_blank')">لوكيشن الفرع</button>
+      </div>
+      <div class="branch-item">
+          <strong>هايبر العبور:</strong> داخل افينيو مول الحي التاسع
+          <button class="button" onclick="window.open('https://maps.app.goo.gl/dqcpqYaJ9x34yfdv9?g_st=iw', '_blank')">لوكيشن الفرع</button>
+      </div>
+      <div class="branch-item">
+          <strong>فرع التجمع الخامس:</strong> الحي الخامس- التجمع الخامس داخل ماركاتو مول
+          <button class="button" onclick="window.open('https://maps.app.goo.gl/JKEEXMTGFdzLeYCv8', '_blank')">لوكيشن الفرع</button>
+      </div>
+      <div class="branch-item">
+          <strong>فرع التجمع الثالث:</strong> داخل فيوتشر مول بجانب الجامعه الالمانيه
+          <button class="button" onclick="window.open('https://goo.gl/maps/KZPZYoStiHzxpa769', '_blank')">لوكيشن الفرع</button>
+      </div>
+      <div class="branch-item">
+          <strong>فرع المعادى:</strong> ميدان حسين صدقى امام فندق المعادى، المعادى
+          <button class="button" onclick="window.open('https://maps.app.goo.gl/pt96JLQqNZTBdTYP7', '_blank')">لوكيشن الفرع</button>
+      </div>
+      <div class="branch-item">
+          <strong>فرع ارض الجولف:</strong> ٢٩ ش الشيخ محمد عبد الله دراز، ارض الجولف، مصر الجديدة
+          <button class="button" onclick="window.open('https://goo.gl/maps/1NzfMM3GQZmaY32j8', '_blank')">لوكيشن الفرع</button>
+      </div>
+      <div class="branch-item">
+          <strong>فرع الحصري:</strong> 6 اكتوبر-الحي الأول-محور الكفراوى-بجوار مستشفى الصفوة-سكوير مول
+          <button class="button" onclick="window.open('https://goo.gl/maps/APcob7zrMCfENhRd8', '_blank')">لوكيشن الفرع</button>
+      </div>
+      <div class="branch-item">
+          <strong>فرع اكتوبر:</strong> 6 اكتوبر-المنطقه الرابعه-المحور المركزي-سيلفر مول
+          <button class="button" onclick="window.open('https://goo.gl/maps/N53g1pYwsD7kK9ZJ6', '_blank')">لوكيشن الفرع</button>
+      </div>
+      <div class="header">فرع المنوفية</div>
+      <div class="branch-item">
+          <strong>فرع المنوفية:</strong> هايبر شبين الكوم: Space mall
+          <button class="button" onclick="window.open('https://maps.app.goo.gl/mZm6xr29YgxDewTn9?g_st=ic')">لوكيشن الفرع</button>
+      </div>
+      <div class="branch-item">
+          <div class="header">فروع الأسكندرية</div>
+          <ul>
+              <li class="branch-item">
+                  <strong>فرع المنشية:</strong> المنشية الصغرى شارع القائد جوهر امام جراج هانو
+                  <button class="button" onclick="window.open('https://goo.gl/maps/tD8wDwckryUHfKbP8', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع الورديان:</strong> شارع القفال - مينا البصل
+                  <button class="button" onclick="window.open('https://goo.gl/maps/qDZQfnv8MgRTpfPt8', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع الحديد والصلب:</strong> أمام شارع الحديد والصلب الرئيسي
+                  <button class="button" onclick="window.open('https://goo.gl/maps/DSP373sDphkuuTfg7', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع الدرايسه:</strong> امام منطقه خير الله العجمى- حي غرب
+                  <button class="button" onclick="window.open('https://goo.gl/maps/Ezoj33yabJFYBsSD6', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع العجمى:</strong> الهانوفيل – أمام بنك مصر
+                  <button class="button" onclick="window.open('https://goo.gl/maps/XZu8Gy9ScZoQRokj7', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع الحضرة:</strong> 13 ش الشهيد جلال الدسوقي-الحضرة قبلي
+                  <button class="button" onclick="window.open('https://goo.gl/maps/kR2gfx2VSuC4dKr2A', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع سموحة:</strong> ٢٨ شارع توت عنخ امون برج الثغر أمام مدارس محمد كريم
+                  <button class="button" onclick="window.open('https://goo.gl/maps/ZukKBcseojzhxvtJ6', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع ونجت:</strong> ونجت – أمام مستشفى الرعاية
+                  <button class="button" onclick="window.open('https://goo.gl/maps/w26Y75J22FVrJE9x5', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع باكوس:</strong> ش مصطفى كامل - أمام قسم شرطة رمل أول  – بجوار محل داندي للملابس
+                  <button class="button" onclick="window.open('https://goo.gl/maps/Vedf5VFGZDTk5Bw78', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع أبو سليمان:</strong> اخر شارع الترعة المردومة ناحية الساعة بعد الكنيسة
+                  <button class="button" onclick="window.open('https://goo.gl/maps/VrhpgD7vBsE9EF9WA', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع الفلكى:</strong> 16 ش الملك – بجوار التاج الدمشقي
+                  <button class="button" onclick="window.open('https://goo.gl/maps/vwhBoHKyGnfZnCvu8', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع شارع 30:</strong> شارع 30 متفرع من شارع القاهرة - ارض فضالي
+                  <button class="button" onclick="window.open('https://goo.gl/maps/idaKqRwH5BMniaEU8', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع عرامة:</strong> العصافرة قبلي - شارع 30 متفرع من 45 – آخر الشارع ( أول الشارع مطعم أبو كمال ) – بعد مدرسة عرامة
+                  <button class="button" onclick="window.open('https://goo.gl/maps/iJKZa68hhhFUMHHK7', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع سيدى بشر:</strong> شارع الصداقة بجوار مسجد الصداقه - سيدي بشر
+                  <button class="button" onclick="window.open('https://goo.gl/maps/wMhN8PkYsbKKqQeE9', '_blank')">لوكيشن الفرع</button>
+              </li>
+              <li class="branch-item">
+                  <strong>فرع ميامي:</strong> بير مسعود - امام نادى السيارات بجوار البنك الاهلى
+                  <button class="button" onclick="window.open('https://goo.gl/maps/Nh3iPBtQUaVDv7mi7', '_blank')">لوكيشن الفرع</button>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <script>
+      function toggleBranches() {
+          var branchList = document.getElementById("branchList");
+          if (branchList.style.display === "none" || branchList.style.display === "") {
+              branchList.style.display = "block";
+          } else {
+              branchList.style.display = "none";
+          }
+      }
+  </script>
+</body>
+</html>
